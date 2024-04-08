@@ -30,8 +30,8 @@ exports.getOrderById = async (req, res) => {
 // Create a new order
 exports.createOrder = async (req, res) => {
     const order = new Order({
-        user_id: req.body.userId,
-        product_id: req.body.productId,
+        userId: req.body.userId,
+        productId: req.body.productId,
         quantity: req.body.quantity,
         orderDate: req.body.orderDate
     });
