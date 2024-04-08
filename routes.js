@@ -35,6 +35,12 @@ router.post('/orders', orderController.createOrder);
 router.put('/orders/:id', orderController.updateOrder);
 router.delete('/orders/:id', orderController.deleteOrder);
 
+// Routes for cart
+router.get('/carts', cartController.getAllCarts);
+router.get('/carts/:id', cartController.getCartById);
+router.post('/carts', cartController.createCart);
+router.put('/carts/:id', cartController.updateCart);
+router.delete('/carts/:id', cartController.deleteCart);
 
 // Export API routes
 module.exports = router;
