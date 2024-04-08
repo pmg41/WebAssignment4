@@ -1,0 +1,1 @@
+{"options":{"clusteredIndex":{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"productId","unique":true}},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"productId","unique":true,"clustered":true}],"uuid":"94c3e9122fcc486ba5294f698528f58c","collectionName":"products","type":"collection"}

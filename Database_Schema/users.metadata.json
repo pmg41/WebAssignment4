@@ -1,0 +1,1 @@
+{"options":{"clusteredIndex":{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"userId","unique":true}},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"userId","unique":true,"clustered":true}],"uuid":"1e17ddb6d3af44858c57836d2d92a36a","collectionName":"users","type":"collection"}
