@@ -13,6 +13,10 @@ router.get('/', function (req, res) {
 });
 
 const userController = require('./controllers/UserController');
+const productController = require('./controllers/ProductController');
+const cartController = require('./controllers/CartController');
+const orderController = require('./controllers/OrderController');
+const commentController = require('./controllers/CommentController');
 
 // Routes for users
 router.get('/users', userController.getAllUsers);
@@ -41,6 +45,13 @@ router.get('/carts/:id', cartController.getCartById);
 router.post('/carts', cartController.createCart);
 router.put('/carts/:id', cartController.updateCart);
 router.delete('/carts/:id', cartController.deleteCart);
+
+// Routes for comment
+router.get('/comments', commentController.getAllComments);
+router.get('/comments/:id', commentController.getCommentById);
+router.post('/comments', commentController.createComment);
+router.put('/comments/:id', commentController.updateComment);
+router.delete('/comments/:id', commentController.deleteComment);
 
 // Export API routes
 module.exports = router;
